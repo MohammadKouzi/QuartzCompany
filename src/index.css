@@ -1,0 +1,739 @@
+/* Header.css */
+.HeaderBar {
+  background-color: rgb(46, 53, 123);
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
+ }
+
+.HeaderItem {
+  flex: -2;
+  text-align: left;
+  color: white; /* Ensure text is readable */
+}
+
+.navbar-collapse {
+  flex: 2;
+  justify-content: center; /* Center the Nav items */
+}
+
+.headerLink {
+  color: white; /* Ensure text is readable */
+  margin: 0 1rem;
+  text-align: center;
+ }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: rgb(32, 36, 82);
+    padding: 1rem;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .headerLink {
+    margin: 0 1rem;
+    text-align: center;  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0 0 ;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #292b2c;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.div{
+  overflow: hidden;
+
+}
+
+.bgoverlay {
+  position: relative;
+}
+
+.bgoverlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 100, 0.3);
+}
+
+.theCarouselItem {
+  height: 100px;
+}
+
+.custom-carousel {
+  max-height: 700px; /* Adjust the maximum height of the carousel container */
+}
+
+.carousel-item img {
+  max-height: 700px; /* Adjust the maximum height of images within carousel items */
+}
+
+.section1 {
+  position: relative;
+  padding-right: 800px;
+  white-space: nowrap;
+  padding-bottom: 50px;
+  overflow: hidden;
+
+}
+
+.section2 {
+  padding-top: 10px; /* Adjust top padding for sections */
+    padding-bottom: 10px; /* Adjust bottom padding for sections */
+}
+@media screen and (max-width: 768px) {
+  .section2 {
+    padding-top: 20px; /* Adjust top padding for smaller screens */
+    padding-bottom: 20px; /* Adjust bottom padding for smaller screens */
+  }
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  flex: 0 0 30%;
+  margin: 5px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover .photo {
+  transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    flex: 0 0 45%;
+  }
+}
+.custom-card {
+  padding-top: 4px;
+  height: auto; /* Adjust height to fit content */
+  min-height: 280px; /* Set a minimum height */
+  box-shadow: 0px 8px 12px rgba(46, 53, 123, 0.5);
+  margin-bottom: 20px;
+  overflow: auto; /* Add overflow handling */
+}
+
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effect */
+}
+
+.custom-card:hover {
+  transform: translateY(-5px); /* Move the card up slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card .card-title {
+  padding-top: 2px;
+  color: rgb(46, 53, 123);
+  font-weight: bold;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.custom-card .card-text {
+  padding-top: 4px;
+  color: #343a40;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.custom-card .svg-inline--fa {
+  color: rgb(46, 53, 123);
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .custom-card {
+    min-height: 200px; /* Adjust minimum height for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .custom-card {
+    min-height: 150px; /* Further adjust minimum height for extra small screens */
+  }
+}
+ /* Custom styles for HomePage component */
+/* Custom styles for HomePage component */
+
+.review-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2); /* Initial drop shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.review-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 255, 0.4); /* Change drop shadow color and increase size on hover */
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.review-card h2 {
+  color: #333; /* Customer name color */
+}
+
+.review-card p {
+  color: #666; /* Customer review text color */
+}
+
+
+/* Varying star colors */
+.review-card .fa-star:nth-child(-n +5) {
+  color: #ffcc00; /* Color the first 3 stars yellow */
+}
+
+.review-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 255, 0.4); /* Change drop shadow color and increase size on hover */
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.review-card h2 {
+  color: #333; /* Customer name color */
+}
+
+.whatsapp-tab {
+  position: fixed;
+  left: 0px; /* Adjust the distance from the left edge */
+  top: 70%; /* Position at the vertical center */
+  transform: translateY(-50%);
+  background-color: #25d366; /* WhatsApp green color */
+  color: #fff; /* White text color */
+  padding: 8px;
+  border-radius: 0 64px  64px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: width 0.3s; /* Add transition effect for width change */
+}
+
+.whatsapp-tab:hover {
+   
+  background-color: #1fb255; /* WhatsApp green color */
+    /* Add transition effect for width change */
+}
+.whatsapp-tab h3 {
+  margin: 16px; /* Add space between icon and text */
+  font-size: 16px; /* Reduce font size */
+}
+
+.whatsapp-tab .icon {
+  margin-left: 16px; /* Add margin to the right of the icon */
+}
+
+
+.app-container {
+  position: relative;
+}
+
+.whatsapp-tab {
+  position: fixed;
+  z-index: 999; /* Ensure it appears above other content */
+}
+/* Add custom styles for the form */
+.theform {
+  margin-top: 50px; /* Adjust margin from the top */
+}
+
+/* Add custom styles for the form */
+.theform {
+  margin-top: 50px; /* Adjust margin from the top */
+}
+
+/* Style the form labels */
+.theform label {
+  font-weight: bold; /* Make the labels bold */
+}
+
+/* Style the form inputs */
+.theform input[type="text"],
+.theform input[type="email"],
+.theform textarea {
+  width: 100%; /* Make the inputs full-width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 20px; /* Add margin between inputs */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border-radius */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+ /* Header styles */
+.HeaderBar {
+  background-color: rgb(46, 53, 123);
+  display: flex; 
+  width: 100%; 
+  align-items: center;
+  max-height: 100px;  
+  height: 80px;
+}
+
+.HeaderItem {
+  color: white !important;  
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* Override the color for NavDropdown */
+.HeaderBar .nav-link,
+.HeaderBar .nav-item .dropdown-toggle {
+  color: white !important;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  flex: 1;
+}
+
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0 0 ;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #292b2c;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.bgoverlay {
+  position: relative;
+}
+
+.bgoverlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 100, 0.3);
+}
+
+.theCarouselItem {
+  height: 100px;
+}
+
+.custom-carousel {
+  max-height: 700px; /* Adjust the maximum height of the carousel container */
+}
+
+.carousel-item img {
+  max-height: 700px; /* Adjust the maximum height of images within carousel items */
+}
+
+.section1 {
+  position: relative;
+  padding-right: 800px;
+  white-space: nowrap;
+  padding-bottom: 50px;
+}
+
+.section2 {
+  padding-top: 10px; /* Adjust top padding for sections */
+    padding-bottom: 10px; /* Adjust bottom padding for sections */
+}
+@media screen and (max-width: 768px) {
+  .section2 {
+    padding-top: 20px; /* Adjust top padding for smaller screens */
+    padding-bottom: 20px; /* Adjust bottom padding for smaller screens */
+  }
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  flex: 0 0 30%;
+  margin: 5px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover .photo {
+  transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    flex: 0 0 45%;
+  }
+}
+.custom-card {
+  padding-top: 4px;
+  height: auto; /* Adjust height to fit content */
+  min-height: 280px; /* Set a minimum height */
+  box-shadow: 0px 8px 12px rgba(46, 53, 123, 0.5);
+  margin-bottom: 20px;
+  overflow: auto; /* Add overflow handling */
+}
+
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card .card-title {
+  padding-top: 2px;
+  color: rgb(46, 53, 123);
+  font-weight: bold;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.custom-card .card-text {
+  padding-top: 4px;
+  color: #343a40;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.custom-card .svg-inline--fa {
+  color: rgb(46, 53, 123);
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .custom-card {
+    min-height: 200px; /* Adjust minimum height for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .custom-card {
+    min-height: 150px; /* Further adjust minimum height for extra small screens */
+  }
+}
+ /* Custom styles for HomePage component */
+/* Custom styles for HomePage component */
+
+.review-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2); /* Initial drop shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.review-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 255, 0.4); /* Change drop shadow color and increase size on hover */
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.review-card h2 {
+  color: #333; /* Customer name color */
+}
+
+.review-card p {
+  color: #666; /* Customer review text color */
+}
+
+
+/* Varying star colors */
+.review-card .fa-star:nth-child(-n +5) {
+  color: #ffcc00; /* Color the first 3 stars yellow */
+}
+
+.review-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 255, 0.4); /* Change drop shadow color and increase size on hover */
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.review-card h2 {
+  color: #333; /* Customer name color */
+}
+
+.whatsapp-tab {
+  position: fixed;
+  left: 0px; /* Adjust the distance from the left edge */
+  top: 70%; /* Position at the vertical center */
+  transform: translateY(-50%);
+  background-color: #25d366; /* WhatsApp green color */
+  color: #fff; /* White text color */
+  padding: 8px;
+  border-radius: 0 64px  64px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: width 0.3s; /* Add transition effect for width change */
+}
+
+.whatsapp-tab:hover {
+   
+  background-color: #1fb255; /* WhatsApp green color */
+    /* Add transition effect for width change */
+}
+.whatsapp-tab h3 {
+  margin: 16px; /* Add space between icon and text */
+  font-size: 16px; /* Reduce font size */
+}
+
+.whatsapp-tab .icon {
+  margin-left: 16px; /* Add margin to the right of the icon */
+}
+
+
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-tab {
+  position: fixed;
+  z-index: 999; /* Ensure it appears above other content */
+}
+  
+ 
+
+ /* Style for text input */
+.theform input[type="text"],
+.theform input[type="email"] {
+  width: 100%; /* Make the inputs full-width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 24px; /* Add margin between inputs */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border-radius */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style for textarea */
+.theform textarea {
+  width: 100%; /* Make the textarea full-width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 24px; /* Add margin between inputs */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border-radius */
+  box-sizing: border-box; /* Include padding and border in the width */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.photo-gallery {
+  margin-top: 20px;
+  padding: 0 64px;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative; /* Ensure overlay position relative to image */
+  transition: filter 0.5s ease; /* Add transition for smooth effect */
+
+}
+ 
+.overlay-gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hide overlay */
+  transition: opacity 0.3s ease;
+  border-radius: 8px; /* Ensure same border radius as image */
+}
+
+.gallery-item:hover .overlay-gallery-image {
+  opacity: 1; /* Show overlay on hover */
+  background-color: rgb(46, 61, 225); /* Blue color with opacity */
+ 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0; /* Initially hide text */
+  transition: opacity 0.3s ease; /* Add smooth transition for text */
+}
+ 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+  background-color: rgba(46, 61, 225, 0); /* Blue color with initial opacity 0 */
+  transition: background-color 0.5s ease; /* Transition the background color */
+}
+
+.gallery-item:hover .overlay {
+  background-color: rgba(38, 49, 179, 0.5); /* Blue color with opacity */
+}
+
+
+.gallery-item:hover .overlay-text {
+  opacity: 1; /* Show text on hover */
+}
+
+.overlay-text p {
+  margin: 0; /* Reset margin for paragraph */
+}
+
+
+  /* Services.css */
+.tab-content-inner {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+.Servicesp {
+    font-size: 20px;
+   padding-top: 24px;
+ }
+.service-image {
+  padding-top: 32px;
+  border-radius: 8px;
+  width: 500px; /* Set the fixed width of the image */
+  height: 500px; /* Set the fixed height of the image */
+  }
+
+
+
+.tab-content-inner p {
+  flex: 1; /* Allow paragraph to grow and take remaining space */
+}
