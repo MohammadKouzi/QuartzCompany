@@ -1,16 +1,16 @@
 import React from 'react';
-import { Container, Row, Col, Carousel, Card,   } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTools, faGripHorizontal, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Importing different icons
- 
+import { faTools, faGripHorizontal, faUserCheck } from '@fortawesome/free-solid-svg-icons';
+
 import Image1 from '../Images/1.jpg';
 import Image2 from '../Images/2.jpg';
 import Image3 from '../Images/3.jpg';
- 
+
 const HomePage = () => {
   return (
     <div className="body">
-       <div className='SiteContainer'>
+      <div className='SiteContainer'>
         {/* Section 1 with auto-slider */}
         <Container fluid>
           <Row>
@@ -73,8 +73,7 @@ const HomePage = () => {
 
         {/* Section 2 */}
         <Container className='section2 text-center'>
-        <br />
-
+          <br />
           <h1>Why Us</h1>
           <br />
           <Row>
@@ -121,20 +120,19 @@ const HomePage = () => {
           <div className='grid-container'>
             <Row>
               <Col xs={12} sm={6} md={4}>
-                <img src={Image1} alt="Photo 1" className='photo' />
+                <img src={Image1} alt="Work example 1" className='photo' />
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <img src={Image2} alt="Photo 2" className='photo' />
+                <img src={Image2} alt="Work example 2" className='photo' />
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <img src={Image3} alt="Photo 3" className='photo' />
+                <img src={Image3} alt="Work example 3" className='photo' />
               </Col>
             </Row>
           </div>
         </Container>
-
-          </div>
-     </div>
+      </div>
+    </div>
   );
 }
 
