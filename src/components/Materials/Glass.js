@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
- 
+
 import Image1 from '../../Images/0.jpg';
- 
+
 const Glass = () => {
   const imageTexts = [
     "Text for image 1",
@@ -33,7 +33,7 @@ const Glass = () => {
 
   return (
     <div>
-       <br />
+      <br />
       <h1 className='text-center'>Glass</h1>
       <Container fluid className="body px-4">
         <div className='photo-gallery'>
@@ -42,7 +42,7 @@ const Glass = () => {
               <Col key={index} xs={6} sm={4} md={3} lg={2}>
                 <div className="gallery-item">
                   <div className="image-container">
-                    <img src={Image1} alt={`Image ${index + 1}`} className="gallery-image" />
+                    <img src={Image1} alt={`Glass sample ${index + 1}`} className="gallery-image" />
                     <div className="overlay"></div> {/* Overlay for hover effect */}
                   </div>
                   <div className="overlay-text">
@@ -54,7 +54,7 @@ const Glass = () => {
           </Row>
         </div>
       </Container>
-     </div>
+    </div>
   );
 };
 
